@@ -14,7 +14,7 @@ export const openCard = (item) => {
                 <div class="ModalOrder">
                     <p class="ModalListItemPrice"><b>Price: </b>${item.price} $ </p>
                     <div class="ModalListItemCart">
-                        <img src="../../assets/cart.png" alt="cartIcon" data-image="cart"  data-category=${item.category} data-id=${item.id} class="modalCartProduct">
+                        <img src="./assets/cart.png" alt="cartIcon" data-image="cart"  data-category=${item.category} data-id=${item.id} class="modalCartProduct">
                     </div>
                 </div>
             </li>

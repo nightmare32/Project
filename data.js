@@ -83,7 +83,7 @@ export const games = [
         id: "11",
         category: "games ",
         title: "Xiaomi AirDots Black",
-        url: "https://mark.com.ru/wa-data/public/shop/products/03/42/34203/images/31125/31125.970.png",
+        url: "https://sc02.alicdn.com/kf/Ha08812a06ed540449cb14bde3a4b98f2T.png",
         description: "TWS Xiaomi Redmi AirDots Black (TWSEJ04LS) earphones are manufactured with 4.1 grams for a skin insert and 27.2 grams with a charging case, an all-in-one 300 mAh battery, and three additional charges.",
         price: 20
     },
