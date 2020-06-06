@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo"><img src="./assets/header_logo.png" alt="logo" class="logoIcon" ><p class="logoText">house of sound</p></div>
+
+        <nav class="navigation">
+          <ul class="navigationList">
+            <li class="navLink"><a href="#" class="activeLink" data-page="games">Wireless</a></li>
+            <li class="navLink"><a href="#" data-page="programs">Wired</a></li>
+          </ul>
+        </nav>
+        <div class="rightMenu">
+          <div class="headerCart">
+            <img src="./assets/cart.png" alt="headerCart" class="headerCartIMG modalCart" />
+            <div class="cartCount">0</div>
+          </div>
+          <div class="user"><img src="./assets/anonymous.png" alt="userIcon" class="userIcon" /></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <p class="currentPageName"></p>
+        <ul class="listItems"></ul>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

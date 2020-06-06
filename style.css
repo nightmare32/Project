@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =================== header ========================= */
+
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-shadow: 0px 0px 29px 7px rgba(0, 0, 0, 0.75);
+  margin-bottom: 100px;
+}
+
+/* ----------- logo --------------------- */
+.logo {
+  height: 20px;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+.logoIcon {
+  position: absolute;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logoText{
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 15px;
+  width: 200px;
+  margin-left: 70px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* ----------------------- navigation ------------------------ */
+.navigationList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* background-color: teal; */
+}
+.navLink {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.navLink a {
+  padding: 2px;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.activeLink {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+/* ---------------------- cart -------------------------------- */
+.rightMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+.headerCart {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0 10px;
+}
+.headerCartIMG {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.borderLine {
+  width: 3px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: white;
+}
+
+
+/* ------------------------user ------------------------------ */
+
+.user {
+  position: relative;
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 13px;
+  width: 13px;
+}
+
+.activeUser {
+  background-color: green;
+}
+
+/* ======================== modal ========================= */
+.modal {
+  padding: 1.8rem 2.16rem .9rem;
+  width: 550px;
+  max-width: 1300px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.modalProperties {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+main{
+  width: 1700px;
+  margin-top: 500px;
+  margin: auto;
+}
+/* ======================= pages ================== */
+/* ++++++++++++++++++ games ++++++++++++++++++ */
+.listItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.listItem:hover{
+  border: 2px solid black ;
+}
+.listItem {
+  width: 250px;
+  height: 340px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.listItemTitle {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.listItemImgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItemImg {
+  max-height: 90px;
+}
+
+.listItemDescription {
+  font-size: 15px;
+ 
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.listItemPrice {
+  font-size: 12px;
+}
+
+.order {
+  position: absolute;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5px;
+}
+
+.listItemCart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.listItemCartIMG {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+
+.cartCount {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2px;
+  right: -16px;
+  font-size: 8px;
+  text-align: center;
+  line-height: 13px;
+  font-weight: 800;
+}
+
+
+/* ====================== modalCard ====================== */
+.modalCard {
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.ModalListItem {
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  padding-bottom: 40px;
+}
+.ModalListItemTitle {
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.ModalListItemImgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalListItemImg {
+  max-height: 90px;
+}
+
+.ModalListItemDescription {
+  font-size: 10px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.ModalListItemPrice {
+  font-size: 12px;
+}
+
+.ModalOrder {
+  position: absolute;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5px;
+}
+
+.ModalListItemCart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+
+}
+
+.modalCartProduct {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+/* ======================= modalCart =========================== */
+.modalTitle {
+
+
+}
+
+.cartList {
+  list-style: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ========================== media ============================= */
+@media (min-width: 320px) and (max-width: 767px){
+  main{
+    width: 200px;
+    margin: auto;
+  }
+  .header{
+    margin-bottom: 10px;
+  }
+  .logo {
+    height: 20px;
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+  }
+  .logoIcon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  .logoText{
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 7px;
+    width: 100px;
+    margin-left: 25px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  .navigationList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+  }
+  .navLink {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  .navLink a {
+    padding: 2px;
+    width: 100px;
+    font-size: 10px;
+    margin-left: 3px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .activeLink {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  main{
+    width: 600px;
+    margin: auto;
+  }
+  .header{
+    margin-bottom: 10px;
+  }
+  .logo {
+    height: 20px;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+  }
+  .logoIcon {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logoText{
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-size: 12px;
+    width: 200px;
+    margin-left: 75px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  .navigationList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+  }
+  .navLink {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  .navLink a {
+    padding: 2px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .activeLink {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1800px){
+  main{
+    width: 1000px;
+    margin: auto;
+  }
+  .header{
+    margin-bottom: 10px;
+  }
+  .logo {
+    height: 20px;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+  }
+  .logoIcon {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logoText{
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-size: 12px;
+    width: 200px;
+    margin-left: 75px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  .navigationList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+  }
+  .navLink {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  .navLink a {
+    padding: 2px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .activeLink {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+}
+  /* ==================== header ============================= */
+  .header {
+    height: 40px;
+  }
+
+  /* ------------------ logo ------------------------ */
+  .logo {
+    height: 35px;
+    width: 80px;
+  }
+  .logoIcon {
+    position: absolute;
+    height: 25px;
+
+    /* ----------------- navigation ---------------------------- */
+  }
+  .navLink {
+    margin: 16px;
+    font-size: 14px;
+  }
+
+  /* --------------------- user ----------------------- */
+  .user {
+    width: 30px;
+    height: 30px;
+  }
+  .userIcon {
+    height: 21px;
+    width: 21px;
+  }
+}
+
+@media (min-width: 1024px) {
+} */ */
