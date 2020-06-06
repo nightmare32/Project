@@ -12,7 +12,7 @@ export const openCard = (item) => {
                 </div>
                 <p class="ModalListItemDescription"><b>Description: </b>${item.description}</p>
                 <div class="ModalOrder">
-                    <p class="ModalListItemPrice"><b>Price: </b>${item.price} UAH</p>
+                    <p class="ModalListItemPrice"><b>Price: </b>${item.price} $ </p>
                     <div class="ModalListItemCart">
                         <img src="../../assets/cart.png" alt="cartIcon" data-image="cart"  data-category=${item.category} data-id=${item.id} class="modalCartProduct">
                     </div>

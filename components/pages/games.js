@@ -10,7 +10,7 @@ export const createItemMarkup = (item) => {
     <div class="order">
         <p class="listItemPrice"><b>Price: </b>${item.price} $</p>
         <div class="listItemCart">
-            <img src="./assets/cart.png" alt="cartIcon" data-image="cart"  data-category=${item.category} data-id=${item.id} class="listItemCartIMG">
+            <img src="../../assets/cart.png" alt="cartIcon" data-image="cart"  data-category=${item.category} data-id=${item.id} class="listItemCartIMG">
         </div>
     </div>
     </li>
